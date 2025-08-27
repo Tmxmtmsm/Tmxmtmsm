@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>لعبة الثعبان</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>لعبة الثعبان</h1>
+        <div class="scoreboard">
+          <span>النتيجة:</span>
+          <strong id="score">0</strong>
+        </div>
+      </header>
+
+      <main class="stage">
+        <canvas id="game" width="480" height="480"></canvas>
+        <div id="overlay" class="overlay visible">
+          <div class="dialog">
+            <h2 id="overlay-title">ابدأ اللعبة</h2>
+            <p id="overlay-text">اضغط مفتاح المسافة للبدء. استخدم الأسهم للتحكم.</p>
+            <button id="start-btn" class="btn">ابدأ</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <button id="pause-btn" class="btn secondary">إيقاف مؤقت (مسافة)</button>
+        <button id="reset-btn" class="btn">إعادة</button>
+      </footer>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+  </html>
+
